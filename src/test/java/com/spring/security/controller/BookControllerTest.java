@@ -5,7 +5,6 @@ Spring Integration Test
 5.1 Test with MockMvc
  */
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.security.model.Book;
 import com.spring.security.repository.BookRepository;
 import org.junit.Test;
@@ -22,7 +21,8 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -32,12 +32,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
 @AutoConfigureMockMvc
+@SpringBootTest
 @ActiveProfiles("test")
 public class BookControllerTest {
-
-    private static final ObjectMapper objectMapper= new  ObjectMapper();
 
     @Autowired
     private MockMvc mockMvc;
@@ -96,8 +94,6 @@ public class BookControllerTest {
                 .andExpect(jsonPath("$.errors").isArray())
                 .andExpect(jsonPath("$.errors", hasSize(1)))
                 .andExpect(jsonPath("$.errors", hasItem("Author should be from list Santideva, Marie KBC, Martin Fowler, Virendra Singh")));
-
-        verify(mockRepository, times(0)).save(any(Book.class));
 
     }
 
