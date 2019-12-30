@@ -15,3 +15,9 @@ https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/
 Spring boot security
 https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-security
 
+invoke http method using curl.
+--GET
+> curl -v -X GET localhost:8080/books -h "Content_type:application/json"
+--POST
+> curl -v -X POST localhost:8080/books -h "Content_type:application/json" -d "json-string"
+
