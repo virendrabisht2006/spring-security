@@ -8,3 +8,10 @@ project to demonstrate spring security using spring boot and spring starter secu
 5- h2 database for in memory store, spring data jpa
 6- spring security using basic authentication
 7- disabling spring security for test, defining order for duplicate bean in case of test config
+
+Spring boot security references
+https://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/
+
+Spring boot security
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-security
+
