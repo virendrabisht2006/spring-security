@@ -1,0 +1,39 @@
+OPEN Class -> command + O
+Go to file -> command + shift + O
+Go to next -> control + next
+Go to previous -> control + back
+Navigate back -> command +option + back
+Navigate forward-> command +option +next
+Format code -> command + option + L
+Optimize import -> command +option + O
+comment/uncomment block -> command +option + /
+surround try with catch -> command +option + T
+Find Usage -> option + F7
+Find usage in file -> command + F7
+Run -> command + R
+Debug-> command + D
+Run /debug with configuration -> control +option + R/ control +option + D
+find everywhere-> control +shift + F
+find in file -> command +f
+
+Go to declaration -> command + B or command + click
+Go to implementation  -> command + option + B
+Go to super class method -> command + U
+
+
+Quick documentation -> command + J + ,
+external documentation -> shift + f1
+description of error -> command + F1
+override method -> control + O
+implement method -> control + I
+Generate code -> control + command + n +, + enter
+basic code completion -> control +space
+smart code completion-> control + shift + space
+parameter info-> command + P
+
+Open setting -> command + ,
+Project structure -> command +option +;
+
+
+
+
